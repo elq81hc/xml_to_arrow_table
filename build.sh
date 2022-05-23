@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -rf build/*
-cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=C:/IDE/vcpkg/scripts/buildsystems/vcpkg.cmake
+# rm -rf build/*
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake -T host=x64 -A x64
 
-MSBuild.exe build/xml_to_arrow_table.sln
+cmake --build build/.
 

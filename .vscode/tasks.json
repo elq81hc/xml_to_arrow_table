@@ -1,9 +1,9 @@
 {
-	"version": "2.0.0",
-	"tasks": [
+    "version": "2.0.0",
+    "tasks": [
         {
             "type": "shell",
-            "label": "cmake",
+            "label": "build by script",
             "command": "bash",
             "args": [
                 "build.sh"
@@ -13,8 +13,26 @@
             },
             "problemMatcher": [],
             "group": {
+                "kind": "build"             
+            }
+        },
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "..",
+                "-T", "host=x64",
+                "-A", "x64"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "problemMatcher": [],
+            "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": true                
             }
         }
     ]

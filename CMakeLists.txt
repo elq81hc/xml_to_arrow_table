@@ -6,6 +6,15 @@ set(CMAKE_CXX_STANDARD 11)                  # Enable c++11 standard
 if(NOT DEFINED CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug)
 endif()
+
+INCLUDE_DIRECTORIES(
+  c:/vcpkg/installed/x64-windows/include/
+)
+  
+LINK_DIRECTORIES(
+  c:/vcpkg/installed/x64-windows/lib/
+)
+
 # arrow apache
 find_package(Arrow REQUIRED)
 # tinyxml2

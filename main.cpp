@@ -107,6 +107,6 @@ int main()
 {
     // xml2ArrowTable();
     // std::cout << jsonToArrowTable()->ToString();
-    std::cout << customTable()->ToString();
+    std::cout << "hell world";
     return 0;
 }

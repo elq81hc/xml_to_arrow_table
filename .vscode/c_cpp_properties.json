@@ -4,8 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/IDE/vcpkg/packages/tinyxml2_x64-windows/include/**",
-                "C:/IDE/vcpkg/packages/arrow_x64-windows/include/**"
+                "c:/vcpkg/installed/x64-windows/include/**"
             ],
             "defines": [
                 "_DEBUG",

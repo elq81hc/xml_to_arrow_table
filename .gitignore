@@ -31,3 +31,8 @@ build/
 *.exe
 *.out
 *.app
+
+# vscode
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json

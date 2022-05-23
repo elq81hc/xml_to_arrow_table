@@ -52,21 +52,13 @@ std::shared_ptr<arrow::Table> createSimpleArrowTable()
 std::shared_ptr<arrow::Table> customTable()
 {
     std::vector<std::shared_ptr<arrow::Array>> arrays;
-    // {
-    //     std::shared_ptr<arrow::Array> arr;
-    //     arrow::StringBuilder builder;
-    //     builder.Append("aaaa");
-    //     builder.Finish(&arr);
-    //     arrays.emplace_back(std::move(arr));
-    // }
     {
         std::shared_ptr<arrow::Array> arr;
 
         // struct_: key=node->name, type=string
-        auto type = arrow::struct_({arrow::field("rootElement", arrow::struct_({}))});
+        auto type = arrow::struct_({arrow::field("rootElement", arrow::list(arrow::struct_({})))});
 
         arrow::StructBuilder builder(type, arrow::default_memory_pool(), {});
-        // builder.AppendValues(1, );
         builder.Finish(&arr);
         arrays.emplace_back(std::move(arr));
     }
