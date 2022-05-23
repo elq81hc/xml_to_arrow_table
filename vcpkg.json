@@ -1,0 +1,8 @@
+{
+    "name": "xml-to-table",
+    "version-string": "0.1.0",
+    "dependencies": [
+      "tinyxml2",
+      "arrow"
+    ]
+}

@@ -1,0 +1,29 @@
+[info] str: string
+book: map<string ('some_key'), string ('some_value') ('some_entries')>
+  child 0, some_entries: struct<some_key: string not null, some_value: string> not null
+      child 0, some_key: string not null
+      child 1, some_value: string
+----
+str:
+  [
+    [
+      "Everyday Italian"
+    ]
+  ]
+book:
+  [
+    [
+      keys:
+      [
+        "title",
+        "author"
+      ]
+      values:
+      [
+        "Everyday Italian",
+        "Giada De Laurentiis"
+      ],
+      null
+    ]
+  ]
+

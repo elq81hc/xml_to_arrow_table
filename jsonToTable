@@ -1,0 +1,50 @@
+bookstore: struct<book: list<item: struct<title: string, author: string, year: int64, price: struct<discount: double, orginal: int64>>>>
+  child 0, book: list<item: struct<title: string, author: string, year: int64, price: struct<discount: double, orginal: int64>>>
+      child 0, item: struct<title: string, author: string, year: int64, price: struct<discount: double, orginal: int64>>
+          child 0, title: string
+          child 1, author: string
+          child 2, year: int64
+          child 3, price: struct<discount: double, orginal: int64>
+              child 0, discount: double
+              child 1, orginal: int64
+----
+bookstore:
+  [
+    -- is_valid: all not null
+    -- child 0 type: list<item: struct<title: string, author: string, year: int64, price: struct<discount: double, orginal: int64>>>
+      [
+        -- is_valid: all not null
+        -- child 0 type: string
+          [
+            "Everyday Italian",
+            "Harry Potter",
+            "Learning XML"
+          ]
+        -- child 1 type: string
+          [
+            "Giada De Laurentiis",
+            "J K. Rowling",
+            "Erik T. Ray"
+          ]
+        -- child 2 type: int64
+          [
+            2005,
+            2005,
+            2003
+          ]
+        -- child 3 type: struct<discount: double, orginal: int64>
+          -- is_valid: all not null
+          -- child 0 type: double
+            [
+              28.05,
+              28.05,
+              28.05
+            ]
+          -- child 1 type: int64
+            [
+              30,
+              30,
+              30
+            ]
+      ]
+  ]

@@ -1,0 +1,33 @@
+{
+    "bookstore": {
+      "book": [
+        {
+          "title": "Everyday Italian",
+          "author": "Giada De Laurentiis",
+          "year": 2005,
+          "price": {
+                "discount": 28.05,
+                "orginal": 30
+          }
+        },
+        {
+          "title": "Harry Potter",
+          "author": "J K. Rowling",
+          "year": 2005,
+          "price": {
+                "discount": 28.05,
+                "orginal": 30
+            }
+        },
+        {
+          "title": "Learning XML",
+          "author": "Erik T. Ray",
+          "year": 2003,
+          "price": {
+                "discount": 28.05,
+                "orginal": 30
+            }
+        }
+      ]
+    }
+  }

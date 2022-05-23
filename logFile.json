@@ -1,0 +1,40 @@
+[info] Root: bookstore
+[info] Element: book
+[info] Attribute: 
+[info]     name:category, value: cooking
+[info] Element: title
+[info] Attribute: 
+[info]     name:lang, value: en
+[info] Text: Everyday Italian
+[info] Element: author
+[info] Text: Giada De Laurentiis
+[info] Element: year
+[info] Text: 2005
+[info] Element: price
+[info] Text: 30.00
+[info] Element: book
+[info] Attribute: 
+[info]     name:category, value: children
+[info] Element: title
+[info] Attribute: 
+[info]     name:lang, value: en
+[info] Text: Harry Potter
+[info] Element: author
+[info] Text: J K. Rowling
+[info] Element: year
+[info] Text: 2005
+[info] Element: price
+[info] Text: 29.99
+[info] Element: book
+[info] Attribute: 
+[info]     name:category, value: web
+[info] Element: title
+[info] Attribute: 
+[info]     name:lang, value: en
+[info] Text: Learning XML
+[info] Element: author
+[info] Text: Erik T. Ray
+[info] Element: year
+[info] Text: 2003
+[info] Element: price
+[info] Text: 39.95
